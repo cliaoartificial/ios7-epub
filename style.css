@@ -1,0 +1,153 @@
+/*---------------------PAGE STYLES---------------------*/
+
+body {
+    background-color: #666666;
+}
+
+h1 {font-family: helvetica, 'sans-serif'; text-align: center; letter-spacing:3px;}
+
+.iphone{
+    width: 350px;
+    margin: 20px 0px 200px 530px;
+}
+
+.ipad{
+    width: 550px;
+    margin: 20px 0px 200px 430px;
+}
+
+.circle{
+    border-radius: 50%;
+	width: 25px;
+	height: 25px; 
+    background: #fff;
+    position: absolute;
+}
+
+.fourcircles{
+	height:119px;
+    width:156px;
+    background-image: url('img/fourswipe.png');
+    position: absolute;
+}
+
+/*----------------INTERACTION ANIMATIONS----------------*/
+
+#tap {
+    top:400px;
+    left:630px;
+    -webkit-animation:tap 5s infinite; /* Chrome, Safari, Opera */
+    animation:tap 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes tap
+{
+0%   {opacity: 0}
+40%  {opacity: 0}
+50%  {opacity: 1}
+60%  {opacity: 0}
+100% {opacity: 0}
+}
+
+/* Standard syntax */
+@keyframes tap
+{
+0%   {left:630px;}
+35%  {left:780px;}
+100% {left:780px;}
+}
+
+#drag {
+    top:1380px;
+    left: 750px;
+    -webkit-animation:drag 5s infinite; /* Chrome, Safari, Opera */
+    animation:drag 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes drag
+{
+0%   {left:630px;}
+15%  {left:630px;}
+60%  {left:780px;}
+100% {left:780px;}
+}
+
+/* Standard syntax */
+@keyframes drag
+{
+0%   {left:630px;}
+15%  {left:630px;}
+60%  {left:780px;}
+100% {left:780px;}
+}
+
+#flick {
+    top:2340px;
+    left: 750px;
+    -webkit-animation:flick 5s infinite; /* Chrome, Safari, Opera */
+    animation:flick 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes flick
+{
+0%  {left:680px; top:2340px;}
+7% {left:780px; top:2280px;}
+100% {left:780px; top:2280px; opacity:0;}
+}
+
+/* Standard syntax */
+@keyframes flick
+{
+0%  {left:680px; top:2340px;}
+7% {left:780px; top:2280px;}
+100% {left:780px; top:2280px; opacity:0;}
+}
+
+#swipe {
+    top:3340px;
+    left: 750px;
+    -webkit-animation:swipe 5s infinite; /* Chrome, Safari, Opera */
+    animation:swipe 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes swipe
+{
+0%   {left:630px;}
+25%  {left:780px;}
+100% {left:780px;}
+}
+
+/* Standard syntax */
+@keyframes swipe
+{
+0%   {left:630px;}
+25%  {left:780px;}
+100% {left:780px;}
+}
+
+#fourfingerswipe {
+    top: 4280px;
+    left: 750px;
+    -webkit-animation:fourfingerswipe 5s infinite; /* Chrome, Safari, Opera */
+    animation:fourfingerswipe 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fourfingerswipe
+{
+0%   {left:580px;}
+25%  {left:730px; top: 4230px;}
+100% {left:730px; top: 4230px;}
+}
+
+/* Standard syntax */
+@keyframes fourfingerswipe
+{
+0%   {left:580px;}
+25%  {left:730px;}
+100% {left:730px;}
+}
